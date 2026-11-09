@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy / Polityka Prywatności - Silver Gokart Radio</title>
+    <style>
+        :root {
+            --primary: #ff6b00;
+            --bg: #0b0e14;
+            --surface: #151a24;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: #222b3d;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 32px 16px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            border: 1px solid var(--border);
+        }
+        .lang-switch {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+        .lang-btn {
+            background: rgba(255, 107, 0, 0.15);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .lang-btn:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 26px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        h2 {
+            color: #fff;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 36px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #f1f5f9;
+            margin-top: 20px;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+        ul { padding-left: 24px; }
+        .highlight {
+            background-color: rgba(255, 107, 0, 0.08);
+            padding: 16px 20px;
+            border-left: 4px solid var(--primary);
+            border-radius: 6px;
+            margin: 20px 0;
+            color: #f8fafc;
+        }
+        code {
+            background: #1e2638;
+            color: #38bdf8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .date {
+            font-size: 0.85em;
+            color: #64748b;
+            margin-bottom: 24px;
+        }
+        hr.divider {
+            border: 0;
+            height: 2px;
+            background: var(--border);
+            margin: 48px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#polish" class="lang-btn">🇵🇱 Wersja Polska</a>
+            <a href="#english" class="lang-btn">🇬🇧 English Version</a>
+        </div>
+
+        <!-- POLISH VERSION -->
+        <section id="polish">
+            <h1>Polityka Prywatności aplikacji Silver Gokart Radio</h1>
+            <p class="date">Ostatnia aktualizacja: 9 listopada 2026 r.</p>
+
+            <div class="highlight">
+                <strong>W skrócie:</strong> Aplikacja <strong>Silver Gokart Radio</strong> w pełni szanuje Twoją prywatność. <strong>Nie zbieramy, nie przechowujemy na zewnętrznych serwerach i nie przekazujemy żadnych Twoich danych osobowych ani telemetrycznych.</strong>
+            </div>
+
+            <h2>1. Informacje ogólne</h2>
+            <p>Aplikacja <em>Silver Gokart Radio</em> jest narzędziem wspomagającym kierowców gokartów, dostarczającym informacje telemetryczne i komunikaty głosowe (TTS) podczas jazdy po torze kartingowym.</p>
+
+            <h2>2. Gromadzenie i przetwarzanie danych</h2>
+            <p>Aplikacja nie wymaga rejestracji konta, logowania ani podawania jakichkolwiek danych wrażliwych:</p>
+            <ul>
+                <li><strong>Imię i nazwisko kierowcy:</strong> Wprowadzane w aplikacji imię lub numer gokarta służy wyłącznie do lokalnego dopasowania kierowcy do publicznej tabeli wyników na żywo na ekranie Twojego smartfona.</li>
+                <li><strong>Lokalne przechowywanie (SharedPreferences):</strong> Wszystkie preferencje użytkownika (wybrany profil radiowy, język, zapamiętane imię kierowcy) są zapisywane <strong>wyłącznie lokalnie w pamięci Twojego urządzenia</strong> i nigdy nie opuszczają telefonu.</li>
+            </ul>
+
+            <h2>3. Usługa na pierwszym planie (Foreground Service) i Dźwięk</h2>
+            <p>Aplikacja korzysta z uprawnienia usługi na pierwszym planie (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>) w celu odtwarzania komunikatów głosowych przez syntezator mowy (TTS) w słuchawkach kierowcy, gdy ekran urządzenia jest zablokowany podczas jazdy (telefon w kieszeni kombinezonu). Usługa nie rejestruje dźwięku z mikrofonu ani nie nagrywa użytkownika.</p>
+
+            <h2>4. Połączenia sieciowe</h2>
+            <p>Aplikacja łączy się z oficjalnym publicznym strumieniem telemetrycznym toru kartingowego przez protokół WebSocket (Apex Timing) wyłącznie w trybie odczytu (odbiór czasów okrążeń i flag torowych). Żadne dane z telefonu nie są wysyłane do serwerów toru.</p>
+
+            <h2>5. Bezpieczeństwo i udostępnianie danych podmiotom trzecim</h2>
+            <p>Aplikacja nie korzysta z żadnych zewnętrznych bibliotek śledzących, analitycznych (brak Google Analytics, Firebase Analytics), ani sieci reklamowych. Żadne dane nie są sprzedawane ani udostępniane podmiotom trzecim.</p>
+
+            <h2>6. Zmiany w polityce prywatności</h2>
+            <p>Wszelkie przyszłe aktualizacje niniejszej polityki będą publikowane pod tym samym adresem URL.</p>
+
+            <h2>7. Kontakt</h2>
+            <p>W przypadku jakichkolwiek pytań dotyczących niniejszej polityki prosimy o kontakt pod adresem e-mail podanym na karcie aplikacji w Google Play Store.</p>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ENGLISH VERSION -->
+        <section id="english">
+            <h1>Privacy Policy for Silver Gokart Radio</h1>
+            <p class="date">Last updated: November 9, 2026</p>
+
+            <div class="highlight">
+                <strong>Summary:</strong> <strong>Silver Gokart Radio</strong> fully respects your privacy. <strong>We do not collect, store on external servers, or share any of your personal or telemetry data.</strong>
+            </div>
+
+            <h2>1. General Information</h2>
+            <p><em>Silver Gokart Radio</em> is a mobile application designed for go-kart drivers, providing real-time telemetry, track flags, and in-helmet voice pit radio announcements (Text-to-Speech) during track sessions.</p>
+
+            <h2>2. Data Collection and Usage</h2>
+            <p>The application does not require user registration, account creation, or login:</p>
+            <ul>
+                <li><strong>Driver Name / Kart Number:</strong> Any name or kart number entered by the user is used solely locally on the device to highlight the user in the live timing grid.</li>
+                <li><strong>Local Storage (SharedPreferences):</strong> User settings (selected radio profile, preferred language, saved driver name) are stored <strong>strictly locally on your device</strong> and are never transmitted to external servers.</li>
+            </ul>
+
+            <h2>3. Foreground Service and Audio Playback</h2>
+            <p>The application utilizes the foreground service permission (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>) to deliver Text-to-Speech audio cues through connected earphones while the driver is on track with the screen locked in a pocket. The application does not access the microphone or record audio.</p>
+
+            <h2>4. Network Connections</h2>
+            <p>The app connects to the public live timing WebSocket stream provided by the track timing system (Apex Timing) in read-only mode to receive lap times and flags. No user data is sent back to the track servers.</p>
+
+            <h2>5. Third-Party Services and Analytics</h2>
+            <p>The application contains no third-party analytics SDKs, trackers, or advertising frameworks. No user data is shared, sold, or transferred to third parties.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>The application does not knowingly collect any personal identifiable information from children under the age of 13.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding this Privacy Policy, please contact the developer via the support email listed on the Google Play Store listing.</p>
+        </section>
+    </div>
+</body>
+</html>
